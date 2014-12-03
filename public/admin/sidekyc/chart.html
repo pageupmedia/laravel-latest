@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SideKYC</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/summernote.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="chart-page-wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" /></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-center top-nav">
+                <li class="feed">
+                    <img src="img/icon_feed.png" />
+                    <div class="nav-label">feed</div>
+                </li>
+                <li class="dashboard">
+                    <img src="img/icon_dashboard.png" />
+                    <div class="nav-label">dashboard</div>
+                </li>
+                <li class="onboard">
+                    <img src="img/icon_onboard.png" />
+                    <div class="nav-label">onboarding</div>
+                </li>
+            </ul>
+            <ul class="nav navbar-right top-nav">
+                <button id="logout-btn" class="navbar-btn">
+                    <img class="" src="img/icon_close.png" />
+                </button>
+            </ul>
+            
+        </nav>
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"><span class="sidebar-icon admin"></span>Green Capital</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon posts"></span>Posts
+                </li>
+                <li>
+                    <a href="#">New Entry</a>
+                </li>
+                <li>
+                    <a href="#">View All Entries</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon pages"></span>Pages
+                </li>
+                <li>
+                    <a href="#">New Page</a>
+                </li>
+                <li>
+                    <a href="#">View All Pages</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon categories"></span>Categories
+                </li>
+                <li>
+                    <a href="#">New Category</a>
+                </li>
+                <li>
+                    <a href="#">New Tag</a>
+                </li>
+                <li>
+                    <a href="#">Manage Categories</a>
+                </li>
+                <li>
+                    <a href="#">Manage Tags</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon users"></span>Users
+                </li>
+                <li>
+                    <a href="#">New User</a>
+                </li>
+                <li>
+                    <a href="#">Manage Users</a>
+                </li>
+                <li>
+                    <a href="#">Manage Roles</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon pages"></span>Settings
+                </li>
+                <li>
+                    <a href="#">General Settings</a>
+                </li>
+                <li>
+                    <a href="#">Theme Settings</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="chart">
+            <div class="top-menu-container">
+                <div class="top-menu">
+                    <button class="btn left lock"><span class="icon lock"></span></button>
+                    <div class="lock-baloon bubble left">Your Feed: <b>Green Capital</b></div>
+                    <button class="btn right plus">+</button>
+                    <button class="btn right"><span class="caret"></span> Sort</button>
+                    <button class="btn right"><span class="glyphicon glyphicon-star"></span> Bookmarked</button>
+                    <button class="btn right">News I've Shared</button>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="bar-chart chart-wrapper left">
+                    <div class="chart-title">Open Rates Over Time</div>
+                    <canvas id="bar-chart" width="480" height="250"></canvas>
+                </div>
+                <div class="line-chart chart-wrapper right">
+                    <div class="chart-title"><span id="prev-chart" class="nav-chart glyphicon glyphicon-play"></span>New Clients<span id="next-chart" class="nav-chart glyphicon glyphicon-play"></span></div>
+                    <canvas id="line-chart" width="480" height="250"></canvas>
+                </div>
+                <div class="visitor-wrapper left">
+                    <div id="client-base" class="rect-summary">
+                        <div class="value-summary">105</div>
+                        <div class="label-summary">Client Base</div>
+                        <div class="delta-summary up">
+                            <div class="up-value">6%</div>
+                            <span class="delta-symbol glyphicon glyphicon-play"></span>
+                            <div class="down-value">x</div>
+                        </div>
+                    </div>
+                    <div id="client-meetings" class="rect-summary">
+                        <div class="value-summary">15</div>
+                        <div class="label-summary">Client Meetings</div>
+                        <div class="delta-summary down">
+                            <div class="up-value">x</div>
+                            <span class="delta-symbol glyphicon glyphicon-play"></span>
+                            <div class="down-value">3%</div>
+                        </div>
+                    </div>
+                    <div id="unique-view" class="pie">
+                        <img src="img/pie1.png">
+                        <div class="pie-value">415</div>
+                        <div class="pie-label">unique views</div>
+                    </div>
+                    <div id="ave-time" class="pie">
+                        <img src="img/pie2.png">
+                        <div class="pie-value">0:55</div>
+                        <div class="pie-label">avg. read time</div>
+                    </div>
+                </div>
+                <div class="search-box-wrapper right">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input type="text" placeholder="SEARCH ANALYTICS BY CLIENT" />
+                </div>
+                <div class="client-table-wrapper right">
+                    <table id="client-table" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th><div class="column-title">Feeds Sent</div></th>
+                                <th><div class="column-title">Client</div></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>150</td>
+                                <td>David Bradley And Susan Bradley</td>
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td>Michael Al-Binawi</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Morris Goldstein</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Dr. Alan Rickman</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-editor-wrapper left">
+                    <div class="text-editor-title">Quick Edit</div>
+                    <div id="text-editor"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/chart.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/summernote.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    
+    var bar = $("#bar-chart").get(0).getContext("2d");
+    var line = $("#line-chart").get(0).getContext("2d");
+
+    var bar_data = {
+        labels: ["JUNE", "JULY", "AUG", "SEPT", "OCT", "NOV", "DEC", "JAN", "FEB"],
+        datasets: [
+            {
+                label: "",
+                fillColor: "rgba(41,166,202,0.9)",
+                highlightFill: "rgba(41,166,202,0.75)",
+                data: [500, 1200, 2300, 1800, 750, 1250, 1200, 2200, 1300]
+            },
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(41,199,202,0.9)",
+                highlightFill: "rgba(41,199,202,0.75)",
+                data: [1100, 1900, 2800, 3000, 2750, 1500, 2200, 3800, 3000]
+            }
+        ]
+    };
+    var barChart = new Chart(bar).Bar(bar_data, {
+        barShowStroke: false,
+        scaleGridLineColor: "rgba(242,242,242,1)",
+        barDatasetSpacing : 2,
+        barValueSpacing : 12,
+        scaleFontFamily: "'Open Sans'",
+        scaleFontSize: 10,
+        scaleFontStyle: "bold",
+        scaleFontColor: "#5b5c5f",
+        scaleLineColor: "rgba(0,0,0,0)",
+    });
+
+    var line_data = {
+        labels: ["05 JUN", "06 JUN", "07 JUN", "08 JUN", "09 JUN", "10 JUN"],
+        datasets: [
+            {
+                label: "",
+                fillColor: "rgba(220,220,220,0)",
+                strokeColor: "rgba(41,199,202,1)",
+                pointColor: "rgba(255,255,255,1)",
+                pointStrokeColor: "#29c7ca",
+                data: [50, 110, 75, 120, 210, 160]
+            }
+        ]
+    };
+    var lineChart = new Chart(line).Line(line_data, {
+        bezierCurve : false,
+        datasetFill : false,
+        pointDotStrokeWidth : 3,
+        pointDotRadius : 4,
+        datasetStrokeWidth : 3,
+        scaleFontFamily: "'Open Sans'",
+        scaleFontSize: 10,
+        scaleFontStyle: "bold",
+        scaleFontColor: "#5b5c5f",
+        scaleShowLabels: false,
+        scaleLineColor: "rgba(0,0,0,0)",
+        tooltipFillColor: "#2c2e33",
+        tooltipFontFamily: "'Open Sans'",
+        tooltipFontSize: 16,
+        tooltipFontStyle: "normal",
+        tooltipFontColor: "#fff",
+        tooltipYPadding: 7,
+        tooltipXPadding: 10,
+        tooltipCaretSize: 5,
+        tooltipCornerRadius: 3,
+        tooltipXOffset: 10,
+        tooltipTemplate: "<%= value %>",
+    });
+
+    $('#text-editor').summernote({
+        height: 125,
+        minHeight: 125,             // set minimum height of editor
+        maxHeight: 125,
+        toolbar: [
+            ['fontname', ['fontname']],
+            ['fontsize', ['fontsize']],
+            ['color', ['color']],
+            ['style', ['bold', 'italic', 'underline']],
+            ['paragraph', ['paragraph']]
+          ],
+    });
+
+    $("#client-table").tablesorter(); 
+    
+    </script>
+
+</body>
+
+</html>

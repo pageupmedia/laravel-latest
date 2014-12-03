@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SideKYC</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" /></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <button id="logout-btn" class="navbar-btn">
+                    <img class="" src="img/icon_close.png" />
+                </button>
+            </ul>
+            
+        </nav>
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"><span class="sidebar-icon admin"></span>Green Capital</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon posts"></span>Posts
+                </li>
+                <li>
+                    <a href="#">New Entry</a>
+                </li>
+                <li>
+                    <a href="#">View All Entries</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon pages"></span>Pages
+                </li>
+                <li>
+                    <a href="#">New Page</a>
+                </li>
+                <li>
+                    <a href="#">View All Pages</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon categories"></span>Categories
+                </li>
+                <li>
+                    <a href="#">New Category</a>
+                </li>
+                <li>
+                    <a href="#">New Tag</a>
+                </li>
+                <li>
+                    <a href="#">Manage Categories</a>
+                </li>
+                <li>
+                    <a href="#">Manage Tags</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon users"></span>Users
+                </li>
+                <li>
+                    <a href="#">New User</a>
+                </li>
+                <li>
+                    <a href="#">Manage Users</a>
+                </li>
+                <li>
+                    <a href="#">Manage Roles</a>
+                </li>
+                <li class="sidebar-section">
+                    <span class="sidebar-icon pages"></span>Settings
+                </li>
+                <li>
+                    <a href="#">General Settings</a>
+                </li>
+                <li>
+                    <a href="#">Theme Settings</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="top-menu-container">
+                <div class="top-menu">
+                    <button class="btn left lock"><span class="icon lock"></span></button>
+                    <div class="lock-baloon bubble left">Your Feed: <b>Green Capital</b></div>
+                    <button class="btn right plus">+</button>
+                    <button class="btn right"><span class="caret"></span> Sort</button>
+                    <button class="btn right"><span class="glyphicon glyphicon-star"></span> Bookmarked</button>
+                    <button class="btn right">News I've Shared</button>
+                </div>
+                <div class="client-dropdown-wrapper">
+                    <div class="dropdown-box">CLIENT</div>
+                    <ul class="client-dropdown">
+                        <li>David Bradley</li>
+                        <li>Michael Goldberg</li>
+                        <li>Yousef Al Walid</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="news-container">
+                <div class="news-box short image advertising">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Advertising</div>
+                            <h3>Revenue and Profit Rise at Google, but Mobile Struggles Continue</h3>
+                            <div class="news-source">
+                                <span class="news-logo google"></span>
+                                <span class="news-title">Google: Why are we ...</span>
+                            </div>
+                        </div>
+                        <img class="news-image" src="img/photo-2_03.jpg" />
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box image entrepreneur long">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Entrepreneur</div>
+                            <h3>Why 10 Years is the Two-Minute Warning for Small Business Owners Facing Retirement</h3>
+                            <div class="news-source">
+                                <span class="news-logo forbes"></span>
+                                <span class="news-title">Forbes: Interview with ...
+                            </div>
+                            <p>If you watched the last three Super Bowls, you know that each ...</p>
+                        </div>
+                        <img class="news-image" src="img/photo-2_05.jpg" />
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box short no-image product">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Consumer Products & Business</div>
+                            <h3>Same-Day Delivery? Not So Fast</h3>
+                            <div class="news-source">
+                                <span class="news-logo google"></span>
+                                <span class="news-title">Google: Why are we ...</span>
+                            </div>
+                            <p>While pondering of a way to sum up Galena Biopharma ...</p>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box short image energy">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Energy</div>
+                            <h3>5 Facts You Should Know About America's Solar Jobs Market</h3>
+                            <div class="news-source">
+                                <span class="news-logo google"></span>
+                                <span class="news-title">Google: Why are we ...</span>
+                            </div>
+                        </div>
+                        <img class="news-image" src="img/photo-3_07.jpg" />
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box short no-image architecture">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Architecture & Business</div>
+                            <h3>The Business Architecture Guild Launches A Guide to the Business Architecture Body of Knowledge</h3>
+                            <div class="news-source">
+                                <span class="news-logo google"></span>
+                                <span class="news-title">Google: Why are we ...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box long no-image biotech">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Biotech</div>
+                            <h3>Galena Biopharma: Numerous Red Flags Suggest A Significant Overvaluation</h3>
+                            <div class="news-source">
+                                <span class="news-logo forbes"></span>
+                                <span class="news-title">Forbes: Interview with ...</span>
+                            </div>
+                            <p>
+                                While pondering of a way to sum up Galena Biopharma, I remembered
+                                that quote and realized how applicable it is to GALE.
+                                The ~200% rise GALE has seen over the past two months is nothing short of
+                                incredible. After trading range bound for over three months, shares of GALE saw a
+                                massive break-out in mid-November and momentum traders who got in on the move during
+                                the early stages were handsomely rewarded with triple digit returns by early January.
+                            </p>
+                            <p>
+                                Now that  the parabolic move has finally exhausted itself ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box long no-image art">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Art & Business</div>
+                            <h3>This is an example of a really long, extra long title that fills up more than four rows
+                                and goes into the fifth row and yes it even goes into seventh row right now</h3>
+                            <div class="news-source">
+                                <span class="news-logo forbes"></span>
+                                <span class="news-title">Forbes: Interview with ...
+                            </div>
+                            <p>
+                                While pondering of a way to sum up Galena Biopharma, I remembered
+                                that quote and realized how applicable it is to GALE.
+                                The ~200% rise GALE has seen over the past two months is nothing short of
+                                incredible. After trading range bound for over three months, shares of GALE saw a
+                                massive break-out in mid-November and momentum traders who got in on the move during
+                                the early stages were handsomely ...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="action left active"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box image pharmaceutical long">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Pharmaceutical</div>
+                            <h3>Protein serves as a natural boost for immune system fight against tumor</h3>
+                            <div class="news-source">
+                                <span class="news-logo forbes"></span>
+                                <span class="news-title">Forbes: Interview with ...
+                            </div>
+                            <p>If you watched the last three Super Bowls, you know that each ...</p>
+                        </div>
+                        <img class="news-image" src="img/photo-2_12.jpg" />
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right active"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box short no-image law-government">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Law & Government</div>
+                            <h3>Andhra Pradesh Assembly Rejects New Delhi's Proposal to Create New State</h3>
+                            <div class="news-source">
+                                <span class="news-logo google"></span>
+                                <span class="news-title">Google: Why are we ...</span>
+                            </div>
+                            <p>While pondering of a way to sum ...</p>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box short no-image marketing">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Marketing</div>
+                            <h3>Google: 'We are becoming central to the biggest brand-building campaigns'</h3>
+                            <div class="news-source">
+                                <span class="news-logo google"></span>
+                                <span class="news-title">Google: Why are we ...</span>
+                            </div>
+                            <p>Google: 'We are becoming central ...</p>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="action left active"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box short no-image career">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">MBA Careers</div>
+                            <h3>Start-ups Offer Risks, Rewards for M.B.A. Interns</h3>
+                            <div class="news-source">
+                                <span class="news-logo google"></span>
+                                <span class="news-title">Google: Why are we ...</span>
+                            </div>
+                            <p>Companies such as Groupon, LivingSocial, and Zynga ...</p>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+                <div class="news-box short no-image nonprofit">
+                    <div class="news-wrapper">
+                        <div class="news-content">
+                            <div class="category">Nonprofit</div>
+                            <h3>Massachusetts Launches Non-Guaranted Social Impact Bonds</h3>
+                            <div class="news-source">
+                                <span class="news-logo google"></span>
+                                <span class="news-title">Google: Why are we ...</span>
+                            </div>
+                            <p>This year is shaping up to be ...</p>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="action left"><span class="icon heart"></span><span class="n-like">23</span></div>
+                        <div class="action left"><span class="icon comment"></span><span class="n-comment">2</span></div>
+                        <div class="action right active"><span class="icon star"></span></div>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn yes">YES</button>
+                        <button class="btn no">NO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="loading"><img src="img/ajax-loader.gif" /></div>
+            <div class="nav next-page">
+                <a class="next" href="/sidekyc/ajax.html">next</a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    var $container = $('.news-container');
+    // init
+    $container.masonry({
+      itemSelector: '.news-box'
+    });
+    $(window).scroll(function() {
+        var x = $(".news-container").height() + $(".news-container").offset().top - $(window).height() - 10;
+        if($(window).scrollTop() > x) {
+           $(".loading").css("display","block");
+           $.ajax({
+              url: $(".nav a.next").attr("href"),
+              dataType: "html"
+           }).done(function(data) {
+              //set next page
+                var href = $( data ).find(".nav a.next").attr("href"); 
+                $(".nav a.next").attr("href", href);
+                  
+                //append news-box
+                var arr = $( data ).find(".news-container .news-box");
+                for(var i=0;i<arr.length;i++) {
+                    $('.news-container').append( arr.eq(i) ).masonry( 'appended', arr.eq(i) );
+                }
+
+                //hide loading
+                $(".loading").css("display","none");
+
+                  //bind event
+                $(".btn.yes").off("click").click(function(){
+                    $(this).parents(".news-box").eq(0).find(".button-container").fadeOut(100, function(){
+                        $(this).parents(".news-box").eq(0).find(".action-container").fadeIn(100,function(){
+                            var $news_box = $(this).parents(".news-box").eq(0);
+                            var $news_box_clone = $news_box.clone(true);
+                            $('.news-container').masonry( 'remove', $news_box );
+                            $('.news-container').prepend( $news_box_clone ).masonry( 'prepended', $news_box_clone );    
+                        });
+                    });
+                })
+                $(".btn.no").off("click").click(function(){
+                    // var $dummy = $(".news-container .news-box").eq(0);
+                    var $news_box = $(this).parents(".news-box").eq(0);
+                    $news_box.fadeOut(function() {
+                        $news_box.removeClass('news_box');
+                        $('.news-container').masonry( 'destroy' );
+                        $container.masonry({
+                          itemSelector: '.news-box'
+                        });
+                
+                    })          
+                })
+                $(".news-box")
+                    .mouseenter(function(e) {
+                        var target = $(e.target);
+                        if(!target.is('.action-container') && !target.is('.button-container')) {
+                            $(this).find(".action-container").fadeOut();
+                            $(this).find(".button-container").fadeIn();
+                        }
+                    })
+                    .mouseleave(function(e) {
+                        var target = $(e.target);
+                        if(!target.is('.action-container') && !target.is('.button-container')) {
+                            $(this).find(".action-container").fadeIn();
+                            $(this).find(".button-container").fadeOut();
+                        }
+                    });
+                $(".button-container").mouseleave(function(e) {
+                    $(this).parents(".news-box").eq(0).find(".action-container").fadeIn();
+                    $(this).parents(".news-box").eq(0).find(".button-container").fadeOut();
+                })
+            });
+            
+        }
+    })
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $(".btn.yes").click(function(){
+        $(this).parents(".news-box").eq(0).find(".button-container").fadeOut(100, function(){
+            $(this).parents(".news-box").eq(0).find(".action-container").fadeIn(100,function(){
+                var $news_box = $(this).parents(".news-box").eq(0);
+                var $news_box_clone = $news_box.clone(true);
+                $('.news-container').masonry( 'remove', $news_box );
+                $('.news-container').prepend( $news_box_clone ).masonry( 'prepended', $news_box_clone );    
+            });
+        });
+    })
+    $(".btn.no").click(function(){
+        // var $dummy = $(".news-container .news-box").eq(0);
+        var $news_box = $(this).parents(".news-box").eq(0);
+        $news_box.fadeOut(function() {
+            $news_box.removeClass('news_box');
+            $('.news-container').masonry( 'destroy' );
+            $container.masonry({
+              itemSelector: '.news-box'
+            });
+    
+        })          
+    })
+    $("body").click(function(e){
+        var target = $(e.target);
+        if(!target.is('.client-dropdown') && !target.is('.dropdown-box')) {
+           if ( $('.client-dropdown').is(':visible') ) $(".client-dropdown").slideUp();
+        }
+        
+    })
+    $(".news-box")
+        .mouseenter(function(e) {
+            var target = $(e.target);
+            if(!target.is('.action-container') && !target.is('.button-container')) {
+                $(this).find(".action-container").fadeOut();
+                $(this).find(".button-container").fadeIn();
+            }
+        })
+        .mouseleave(function(e) {
+            var target = $(e.target);
+            if(!target.is('.action-container') && !target.is('.button-container')) {
+                $(this).find(".action-container").fadeIn();
+                $(this).find(".button-container").fadeOut();
+            }
+        });
+    $(".button-container").mouseleave(function(e) {
+        $(this).parents(".news-box").eq(0).find(".action-container").fadeIn();
+        $(this).parents(".news-box").eq(0).find(".button-container").fadeOut();
+    })
+    $(".dropdown-box").click(function(){
+        $(".client-dropdown").slideToggle();
+    });
+    $(".client-dropdown li").click(function(e){
+        $(".dropdown-box").html($(this).html());
+        $(".client-dropdown").slideUp();
+    })
+    </script>
+
+</body>
+
+</html>
